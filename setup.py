@@ -1,9 +1,8 @@
 #!/usr/bin/env python
-import os
 import re
 from setuptools import setup
 
-MODULE_NAME = 'GuerrillaAPI'
+MODULE_NAME = 'guerrilla'
 
 README = open('README.md').read()
 VERSION = re.search("__version__ = '([^']+)'",
@@ -21,7 +20,7 @@ setup(name=MODULE_NAME,
       install_requires=['requests>=1.0.2', 'setuptools'],
       license='GPL v3',
       long_description=README,
-      py_modules=[MODULE_NAME, 'GuerrillaTests'],
+      py_modules=[MODULE_NAME, 'GuerrillaTester'],
       test_suite='GuerrillaTests',
       url='https://github.com/Mgamerz/GuerillaMailWrapper',
       version=VERSION)
