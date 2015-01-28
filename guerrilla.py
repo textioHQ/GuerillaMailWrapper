@@ -27,7 +27,7 @@ class GuerrillaAPI:
         email_json = email.json()
         self.EMAIL = email_json['email_addr']
         self.EMAIL_ALIAS = email_json['alias']
-        return
+        return self.EMAIL
 
     def get_email_list(self):
         if not self.SESSION_COOKIE:
